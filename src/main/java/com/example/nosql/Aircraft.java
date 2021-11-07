@@ -132,4 +132,20 @@ public class Aircraft {
     public String getRoute() {
         return route;
     }
+
+    public void setRoute(String route) {
+        this.route = route;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 }
