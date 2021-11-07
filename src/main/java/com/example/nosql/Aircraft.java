@@ -80,4 +80,24 @@ public class Aircraft {
         this.posUpdateTime = posUpdateTime;
         this.bds40SeenTime = bds40SeenTime;
     }
+
+    public Long getNeoId() {
+        return neoId;
+    }
+
+    public void setNeoId(Long neoId) {
+        this.neoId = neoId;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCallsign() {
+        return callsign;
+    }
 }
