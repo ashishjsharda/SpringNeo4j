@@ -220,4 +220,20 @@ public class Aircraft {
     public double getPolarDistance() {
         return polarDistance;
     }
+
+    public void setPolarDistance(double polarDistance) {
+        this.polarDistance = polarDistance;
+    }
+
+    public double getPolarBearing() {
+        return polarBearing;
+    }
+
+    public void setPolarBearing(double polarBearing) {
+        this.polarBearing = polarBearing;
+    }
+
+    public boolean isADSB() {
+        return isADSB;
+    }
 }
