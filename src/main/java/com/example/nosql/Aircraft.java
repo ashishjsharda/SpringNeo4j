@@ -267,4 +267,7 @@ public class Aircraft {
     public Instant getBds40SeenTime() {
         return bds40SeenTime;
     }
+    public void setBds40SeenTime(Instant bds40SeenTime) {
+        this.bds40SeenTime = bds40SeenTime;
+    }
 }
