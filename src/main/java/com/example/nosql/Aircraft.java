@@ -164,4 +164,20 @@ public class Aircraft {
     public int getHeading() {
         return heading;
     }
+
+    public void setHeading(int heading) {
+        this.heading = heading;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getVertRate() {
+        return vertRate;
+    }
 }
