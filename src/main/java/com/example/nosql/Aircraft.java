@@ -236,4 +236,19 @@ public class Aircraft {
     public boolean isADSB() {
         return isADSB;
     }
+    public void setADSB(boolean ADSB) {
+        isADSB = ADSB;
+    }
+
+    public boolean isOnGround() {
+        return isOnGround;
+    }
+
+    public void setOnGround(boolean onGround) {
+        isOnGround = onGround;
+    }
+
+    public Instant getLastSeenTime() {
+        return lastSeenTime;
+    }
 }
