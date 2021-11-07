@@ -251,4 +251,20 @@ public class Aircraft {
     public Instant getLastSeenTime() {
         return lastSeenTime;
     }
+
+    public void setLastSeenTime(Instant lastSeenTime) {
+        this.lastSeenTime = lastSeenTime;
+    }
+
+    public Instant getPosUpdateTime() {
+        return posUpdateTime;
+    }
+
+    public void setPosUpdateTime(Instant posUpdateTime) {
+        this.posUpdateTime = posUpdateTime;
+    }
+
+    public Instant getBds40SeenTime() {
+        return bds40SeenTime;
+    }
 }
