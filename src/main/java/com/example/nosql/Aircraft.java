@@ -148,4 +148,20 @@ public class Aircraft {
     public String getCategory() {
         return category;
     }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getAltitude() {
+        return altitude;
+    }
+
+    public void setAltitude(int altitude) {
+        this.altitude = altitude;
+    }
+
+    public int getHeading() {
+        return heading;
+    }
 }
