@@ -180,4 +180,20 @@ public class Aircraft {
     public int getVertRate() {
         return vertRate;
     }
+
+    public void setVertRate(int vertRate) {
+        this.vertRate = vertRate;
+    }
+
+    public int getSelectedAltitude() {
+        return selectedAltitude;
+    }
+
+    public void setSelectedAltitude(int selectedAltitude) {
+        this.selectedAltitude = selectedAltitude;
+    }
+
+    public double getLat() {
+        return lat;
+    }
 }
