@@ -120,4 +120,16 @@ public class Aircraft {
     public void setReg(String reg) {
         this.reg = reg;
     }
+
+    public String getFlightno() {
+        return flightno;
+    }
+
+    public void setFlightno(String flightno) {
+        this.flightno = flightno;
+    }
+
+    public String getRoute() {
+        return route;
+    }
 }
