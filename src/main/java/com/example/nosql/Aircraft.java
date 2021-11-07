@@ -100,4 +100,24 @@ public class Aircraft {
     public String getCallsign() {
         return callsign;
     }
+
+    public void setCallsign(String callsign) {
+        this.callsign = callsign;
+    }
+
+    public String getSquawk() {
+        return squawk;
+    }
+
+    public void setSquawk(String squawk) {
+        this.squawk = squawk;
+    }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public void setReg(String reg) {
+        this.reg = reg;
+    }
 }
