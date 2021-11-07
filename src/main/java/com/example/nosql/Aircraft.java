@@ -208,4 +208,16 @@ public class Aircraft {
     public void setLon(double lon) {
         this.lon = lon;
     }
+
+    public double getBarometer() {
+        return barometer;
+    }
+
+    public void setBarometer(double barometer) {
+        this.barometer = barometer;
+    }
+
+    public double getPolarDistance() {
+        return polarDistance;
+    }
 }
