@@ -295,7 +295,12 @@ public class Aircraft {
                 Objects.equals(squawk, aircraft.squawk) &&
                 Objects.equals(reg, aircraft.reg) &&
                 Objects.equals(flightno, aircraft.flightno) &&
-                Objects.equals(route, aircraft.route) ;
+                Objects.equals(route, aircraft.route) &&
+                Objects.equals(type, aircraft.type) &&
+                Objects.equals(category, aircraft.category) &&
+                Objects.equals(lastSeenTime, aircraft.lastSeenTime) &&
+                Objects.equals(posUpdateTime, aircraft.posUpdateTime) &&
+                Objects.equals(bds40SeenTime, aircraft.bds40SeenTime);
     }
 
 }
