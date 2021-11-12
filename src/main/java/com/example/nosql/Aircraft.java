@@ -312,4 +312,34 @@ public class Aircraft {
                 bds40SeenTime);
     }
 
+    @Override
+    public String toString() {
+        return "Aircraft{" +
+                "neoId=" + neoId +
+                ", id=" + id +
+                ", callsign='" + callsign + '\'' +
+                ", squawk='" + squawk + '\'' +
+                ", reg='" + reg + '\'' +
+                ", flightno='" + flightno + '\'' +
+                ", route='" + route + '\'' +
+                ", type='" + type + '\'' +
+                ", category='" + category + '\'' +
+                ", altitude=" + altitude +
+                ", heading=" + heading +
+                ", speed=" + speed +
+                ", vertRate=" + vertRate +
+                ", selectedAltitude=" + selectedAltitude +
+                ", lat=" + lat +
+                ", lon=" + lon +
+                ", barometer=" + barometer +
+                ", polarDistance=" + polarDistance +
+                ", polarBearing=" + polarBearing +
+                ", isADSB=" + isADSB +
+                ", isOnGround=" + isOnGround +
+                ", lastSeenTime=" + lastSeenTime +
+                ", posUpdateTime=" + posUpdateTime +
+                ", bds40SeenTime=" + bds40SeenTime +
+                '}';
+    }
+
 }
