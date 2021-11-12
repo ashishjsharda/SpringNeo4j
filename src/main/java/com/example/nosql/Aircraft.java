@@ -288,7 +288,10 @@ public class Aircraft {
                 Double.compare(aircraft.polarDistance, polarDistance) == 0 &&
                 Double.compare(aircraft.polarBearing, polarBearing) == 0 &&
                 isADSB == aircraft.isADSB &&
-                isOnGround == aircraft.isOnGround ;
+                isOnGround == aircraft.isOnGround &&
+                Objects.equals(neoId, aircraft.neoId) &&
+                Objects.equals(id, aircraft.id) &&
+                Objects.equals(callsign, aircraft.callsign) ;
     }
 
 }
