@@ -7,6 +7,7 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 
 import java.time.Instant;
+import java.util.Objects;
 
 @Node
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -270,4 +271,24 @@ public class Aircraft {
     public void setBds40SeenTime(Instant bds40SeenTime) {
         this.bds40SeenTime = bds40SeenTime;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aircraft aircraft = (Aircraft) o;
+        return altitude == aircraft.altitude &&
+                heading == aircraft.heading &&
+                speed == aircraft.speed &&
+                vertRate == aircraft.vertRate &&
+                selectedAltitude == aircraft.selectedAltitude &&
+                Double.compare(aircraft.lat, lat) == 0 &&
+                Double.compare(aircraft.lon, lon) == 0 &&
+                Double.compare(aircraft.barometer, barometer) == 0 &&
+                Double.compare(aircraft.polarDistance, polarDistance) == 0 &&
+                Double.compare(aircraft.polarBearing, polarBearing) == 0 &&
+                isADSB == aircraft.isADSB &&
+                isOnGround == aircraft.isOnGround ;
+    }
+
 }
