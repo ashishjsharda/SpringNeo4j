@@ -291,7 +291,11 @@ public class Aircraft {
                 isOnGround == aircraft.isOnGround &&
                 Objects.equals(neoId, aircraft.neoId) &&
                 Objects.equals(id, aircraft.id) &&
-                Objects.equals(callsign, aircraft.callsign) ;
+                Objects.equals(callsign, aircraft.callsign) &&
+                Objects.equals(squawk, aircraft.squawk) &&
+                Objects.equals(reg, aircraft.reg) &&
+                Objects.equals(flightno, aircraft.flightno) &&
+                Objects.equals(route, aircraft.route) ;
     }
 
 }
