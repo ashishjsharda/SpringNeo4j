@@ -303,4 +303,13 @@ public class Aircraft {
                 Objects.equals(bds40SeenTime, aircraft.bds40SeenTime);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(neoId, id, callsign, squawk, reg, flightno, route,
+                type, category, altitude, heading, speed, vertRate,
+                selectedAltitude,  lat, lon, barometer, polarDistance,
+                polarBearing, isADSB, isOnGround, lastSeenTime, posUpdateTime,
+                bds40SeenTime);
+    }
+
 }
