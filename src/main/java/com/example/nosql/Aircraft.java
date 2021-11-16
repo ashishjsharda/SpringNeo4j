@@ -10,6 +10,7 @@ import java.time.Instant;
 import java.util.Objects;
 
 @Node
+@Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Aircraft {
     @Id
