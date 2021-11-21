@@ -15,6 +15,13 @@ public class PositionController {
             WebClient.create("http://localhost:7634/aircraft");
 
     public String getCurrentAircraftPositions(Model model) {
+        repository.deleteAll();
+        client.get()
+                .retrieve()
+                .bodyToFlux(Aircraft.class)
+                .filter(plane -> !plane.getReg().isEmpty())
+                .toStream()
+                .forEach(repository::save);
 
     }
 
