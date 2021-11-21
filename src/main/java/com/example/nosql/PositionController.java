@@ -22,6 +22,8 @@ public class PositionController {
                 .filter(plane -> !plane.getReg().isEmpty())
                 .toStream()
                 .forEach(repository::save);
+        model.addAttribute("currentPositions", repository.findAll());
+        return "positions";
 
     }
 
