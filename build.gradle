@@ -47,7 +47,11 @@ dependencies {
     // https://mvnrepository.com/artifact/com.h2database/h2
     testImplementation group: 'com.h2database', name: 'h2', version: '1.4.200'
 
+    runtimeOnly group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: '2020.0.0-M5', ext: 'pom'
+
+
 }
+
 
 
 test {
